@@ -249,7 +249,7 @@ Using the `timezone` method, you may specify that a scheduled task's time should
 
     $schedule->command('report:generate')
              ->timezone('America/New_York')
-             ->at('2:00')
+             ->at('2:00');
 
 If you are repeatedly assigning the same timezone to all of your scheduled tasks, you may wish to define a `scheduleTimezone` method in your `App\Console\Kernel` class. This method should return the default timezone that should be assigned to all scheduled tasks:
 
